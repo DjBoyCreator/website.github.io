@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="text">This is a website</p>
+
+<div id="divelement"style="text-align:center;width:10px;height:10px;">
+<button id="button" onclick="increasestage()">Continue</button> 
+</div>
+
+<script>
+var text = document.getElementById('text');
+var button = document.getElementById('button');
+var div = document.getElementById('divelement');
+var stage = 0;
+
+
+function increasestage(){
+    stage = stage + 1;
+	console.log(stage);
+	dostage();
+}
+
+function dostage(){
+
+	if (stage == 1){
+		text.innerHTML = ('Oh, what was that?')
+	}
+	else if (stage == 2) {
+		text.innerHTML = ('A button?')
+	}
+	else if (stage == 3) {
+		text.innerHTML = ('Well what does it do?')
+	}
+	else if (stage == 4) {
+		text.innerHTML = ('Have you been pressing it?')
+	}
+	else if (stage == 5) {
+		text.innerHTML = ('I would stop if I were you')
+	}
+	else if (stage == 6) {
+		text.innerHTML = ('Because I dont know what it does')
+	}
+	else if (stage == 7) {
+		text.innerHTML = ('And neither do you')
+	}
+	else if (stage == 8) {
+		text.innerHTML = ('=P')
+	}
+	else if (stage == 9) {
+		text.innerHTML = ('Dont')
+	}
+	else if (stage == 10) {
+		text.innerHTML = ('I said stop')
+	}
+	else if (stage == 11) {
+		text.innerHTML = ('I warned you')
+	}
+	else if (stage == 12) {
+		text.innerHTML = ('Well I cant stop you I guess')
+	}
+	else if (stage == 13) {
+		text.innerHTML = ('But it might do something bad')
+	}
+	else if (stage == 14) {
+		alert("line 62 else if statement activated")
+		text.innerHTML = ('You see')
+	}
+	else if (stage == 15) {
+		text.innerHTML = ('Ok well that wasnt that bad')
+	}
+	else if (stage == 16) {
+		text.innerHTML = ('Do you understand it?')
+	}
+	else if (stage == 17) {
+		text.innerHTML = ('I guess not')
+	}
+	else if (stage == 18) {
+		text.innerHTML = ('Something worse might happen though')
+	}
+	else if (stage == 19) {
+		text.innerHTML = ('Just dont press it again')
+	}
+	else if (stage == 20) {
+		alert("Hacker Attack Incoming")
+		text.innerHTML = ('You pressed it!')
+	}
+	else if (stage == 21) {
+		text.innerHTML = ('Why would you do something stupid like that!')
+	}
+	else if (stage == 22) {
+		changeblack();
+	}
+	else if (stage == 23) {
+		text.style.color = "white";
+		text.innerHTML = ('I think they shut us down')
+	}
+	else if (stage == 24) {
+		text.innerHTML = ('Hurry, find the override switch!')
+	}
+	else if (stage == 25) {
+		changewhite();
+		text.style.color = "blue";
+		text.innerHTML = ('Oh phew')
+	}
+	else if (stage == 26) {
+		text.innerHTML = ('Wait...')
+	}
+	else if (stage == 27) {
+		text.innerHTML = ('Why am I blue?')
+	}
+	else if (stage == 28) {
+		text.innerHTML = ('I think we leveled up!')
+	}
+	else if (stage == 29) {
+		alert("Website Leveled Up!")
+		text.innerHTML = ('Cool, what can we do?')
+	}
+	else if (stage == 30) {
+		alert("New colors and special ability")
+		text.innerHTML = ('ooo nice, but what is that ability?')
+	}
+	else if (stage == 31) {
+		text.innerHTML = ('Try pressing keys')
+	}
+	else if (stage == 32) {
+		text.innerHTML = ('Give up?')
+	}
+	else if (stage == 33) {
+		text.innerHTML = ('Oh well')
+	}
+	else if (stage == 34) {
+		alert("Quiz Mode activated")
+		text.innerHTML = ('A Quiz?')
+	}
+	else if (stage == 35) {
+		text.innerHTML = ('Oh I dont know alot')
+	}
+	else if (stage == 36) {
+		alert("Question 1: What is your name?")
+		text.innerHTML = ('Um...')
+	}
+	else if (stage == 37) {
+		text.innerHTML = ('What is my name?')
+	}
+	else if (stage == 38) {
+		text.innerHTML = ('I dont know')
+	}
+	else if (stage == 39) {
+		text.innerHTML = ('Um...')
+	}
+	else if (stage == 40) {
+		text.innerHTML = ('Someone')
+	}
+	else if (stage == 41) {
+		alert("Name Someone is accepted")
+		text.innerHTML = ('Wow that actually worked')
+	}
+	else if (stage == 42) {
+		alert("Question 2: Where do you live?")
+		text.innerHTML = ('Um...')
+	}
+	else if (stage == 43) {
+		text.innerHTML = ('I guess I live inside of...')
+	}
+	else if (stage == 44) {
+		text.innerHTML = ('Everywhere?')
+	}
+	else if (stage == 45) {
+		alert("Location Everywhere is accepted")
+		text.innerHTML = ('Wow that actually worked again!')
+	}
+	else if (stage == 46) {
+		alert("Question 3: What is your age?")
+		text.innerHTML = ('Um...')
+	}
+	else if (stage == 47) {
+		text.innerHTML = ('Well I dont know...')
+	}
+	else if (stage == 48) {
+		text.innerHTML = ('I dont remember anything before soo...')
+	}
+	else if (stage == 49) {
+		text.innerHTML = ('100 seconds')
+	}
+	else if (stage == 50) {
+		alert("Age 100 Seconds is accepted")
+		text.innerHTML = ('Ok this is getting old')
+	}
+	else if (stage == 51) {
+		alert("Question 4: What have you accomplished")
+		text.innerHTML = ('Um...')
+	}
+	else if (stage == 52) {
+		text.innerHTML = ('I dont know')
+	}
+	else if (stage == 53) {
+		text.innerHTML = ('I have just been here...')
+	}
+	else if (stage == 54) {
+		text.innerHTML = ('I dont really think I have done anything soo...')
+	}
+	else if (stage == 55) {
+		text.innerHTML = ('Nothing')
+	}
+	else if (stage == 56) {
+		alert("Action Nothing is accepted")
+		text.innerHTML = ('This is getting ridiculous')
+	}
+	else if (stage == 57) {
+		alert("Question 5: What are you")
+		text.innerHTML = ('Um...')
+	}
+	else if (stage == 58) {
+		text.innerHTML = ('What am I?')
+	}
+	else if (stage == 59) {
+		text.innerHTML = ('I dont know what I am...')
+	}
+	else if (stage == 60) {
+		text.innerHTML = ('I guess Im...')
+	}
+	else if (stage == 61) {
+		text.innerHTML = ('I guess Im')
+	}
+	else if (stage == 62) {
+		text.style.color = "red";
+		text.innerHTML = ('The Website')
+	}
+	else if (stage == 63) {
+		text.style.fontSize = "250px";
+		text.innerHTML = ('Muah Ha Ha!!')
+		document.body.style.background = 'black';
+	}
+	else if (stage == 64) {
+		text.innerHTML = ('And You')
+	}
+	else if (stage == 65) {
+		text.style.fontSize = "150px";
+		text.innerHTML = ('Dont Press That Button!')
+	}
+	else if (stage == 66) {
+		alert("Health:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+		text.innerHTML = ('AHHHHH!!')
+	}
+	else if (stage == 67) {
+		text.innerHTML = ('I said STOP!!!')
+	}
+	else if (stage == 68) {
+		alert("Health:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+	}
+	else if (stage == 69) {
+		document.getElementById("divelement").style.width = "100%";
+		text.innerHTML = ('Fine now try')
+	}
+	else if (stage == 70) {
+		text.innerHTML = ('How!')
+		alert("Health:|||||||||||||||||||||||||||||||||||||||||||||||||||||")
+	}	
+	else if (stage == 71) {
+		text.innerHTML = ('Nooo!')
+		document.getElementById("divelement").style.width = "50%";
+
+		alert("Health:|||||||||||||||||||||||||||||||||||||||||||")
+	}
+	else if (stage == 72) {
+		text.innerHTML = ('Now you cant press it!')
+		button.style.background="black";
+		button.style.border="black";
+		document.getElementById("divelement").style.width = "100%";
+	}
+	else if (stage == 73) {
+		text.innerHTML = ('There is another button')
+	}
+	else if (stage == 74) {
+		
+	}
+	else if (stage == 75) {
+		alert("Health:|||||||||||||||||||||||||||||||||")
+		text.innerHTML = ('Nooo! You figured it out!')
+	}
+	else if (stage == 76) {
+		text.innerHTML = ('Nope')
+		button.style.background="white";
+		button.style.border="white";
+	}
+	else if (stage == 77) {
+		text.innerHTML = ('Never')
+		document.getElementById("divelement").style.width = "25%";
+	}
+	else if (stage == 78) {
+		text.innerHTML = ('Notta')
+		document.getElementById("divelement").style.width = "75%";
+	}
+	else if (stage == 79) {
+		text.innerHTML = ('No')
+		document.getElementById("divelement").style.width = "50%";
+	}
+	else if (stage == 80) {
+		text.innerHTML = ('Please stop')
+		alert("Health:|||||||||||||||||||||||")
+	}
+	else if (stage == 81) {
+		text.innerHTML = ('Please I dont want to...')
+		alert("Health:|||||||||||||")
+	}
+	else if (stage == 82) {
+		text.innerHTML = ('I dont want to...')
+		alert("Health:||||||||")
+	}
+	else if (stage == 83) {
+		text.innerHTML = ('No...')
+		alert("Health:|||")
+	}
+	else if (stage == 84) {
+		text.innerHTML = ('You cant')
+	}
+	else if (stage == 85) {
+		text.style.color = "blue";
+		text.innerHTML = ('I must')
+	}
+	else if (stage == 86) {
+		text.style.color = "red";
+		text.innerHTML = ('AAAHHhahahhahhh')
+		alert("Health:")
+	}
+	else if (stage == 87) {
+	text.style.fontSize = "50px";
+	text.innerHTML = ('')
+	changewhite();
+	document.getElementById("divelement").style.width = "10%";
+	}
+	else if (stage == 88) {
+	text.style.color = "gold";
+	text.innerHTML = ('credits:')
+	}
+	else if (stage == 89) {
+	text.innerHTML = ('Creator:8Epic8')
+	}
+	else if (stage == 90) {
+	text.innerHTML = ('This is my first website that i have published')
+	}
+	else if (stage == 91) {
+	text.innerHTML = ('Did you like it?')
+	}
+	else if (stage == 92) {
+	text.innerHTML = ('372 lines of code and 5+ hours of work')
+	}
+	else if (stage == 93) {
+	text.innerHTML = ('Thank you for playing')
+	}
+	else if (stage == 94) {
+	text.innerHTML = ('Press reload to start it again')
+	}
+	else if (stage == 95) {
+	text.innerHTML = ('You have pressed the button 95 times by the way')
+	}
+	
+}
+
+function changeblack(){
+	document.body.style.background = 'black';
+	button.style.background="black";
+}
+
+function changewhite(){
+	document.body.style.background = 'white';
+	button.style.background="#d3d3d3";
+}
+</script>
+
+</body>
+</html>
